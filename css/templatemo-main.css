@@ -498,12 +498,25 @@ nav a:hover::before {
 	margin-left: 15px;
 }
 
+.third-content .second-section {
+	margin-top: 30px;
+}
+
 .third-content .second-section .right-content {
 	margin-left: 15px;
+	margin-top: 12px;
 }
 
 .third-content .second-section .left-image {
 	margin-right: 15px;
+}
+
+.third-content .experience-logo {
+	max-width: 200px;
+	width: auto;
+	height: auto;
+	display: block;
+	margin: 0 auto;
 }
 
 .third-content h2 {
