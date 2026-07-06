@@ -20,6 +20,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 
 <body>
@@ -154,7 +156,10 @@
                                 high-quality, performance-driven software.
                             </p>
                             <div class="main-btn">
-                                <a href="https://github.com/tanushripsk?tab=repositories">GitHub</a>
+                                <a href="javascript:void(0)" class="external-link github-link"
+                                    onclick="openGithubAlert()">
+                                    GitHub
+                                </a>
                                 <a href="./resume/Tanushri_Dhote.pdf" onclick="forceDownload(event)">
                                     Download Resume
                                 </a>
@@ -190,16 +195,68 @@
                         <div class="row">
 
                             <!-- EXPERIENCE 1 -->
+                            <div class="second-section">
+                                <div class="container-fluid">
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="left-image">
+                                                <img src="./img/brand-logo.ico" alt="RSSC Technologies Experience"
+                                                    style="max-width: 200px; width: 100%; height: auto; display: block; margin: 0 auto;">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="right-content">
+                                                <h2>Experience</h2>
+                                                <p>
+                                                    <strong>Company:</strong> RSSC Technologies Private Limited<br>
+                                                    <strong>Role:</strong> Full Stack Developer<br>
+                                                    <strong>Duration:</strong> Feb 2026 – Present<br><br>
+
+                                                    <strong>Key Highlights:</strong><br>
+                                                    • Optimized web application performance and improved backend
+                                                    logic.<br>
+                                                    • Resolved client issues by debugging production systems.<br>
+                                                    • Developed automated web scraping solutions for sales and rental
+                                                    property listings.<br>
+                                                    • Built scraping pipelines using Node.js, Playwright, and
+                                                    Crawlee.<br>
+                                                    • Managed scraped property data using MySQL.<br><br>
+
+                                                    <strong>Projects Worked On:</strong><br>
+                                                    • Worked on Industrial Marketplace (UK), developing marketplace
+                                                    features, product management, user authentication, order workflows,
+                                                    and admin functionalities using React.js, Node.js, Express.js,
+                                                    MongoDB, Fastify, HTML5, CSS3, and JavaScript.<br>
+                                                    • Developed features for Diaspora Marketplace (UK) using React.js
+                                                    and Chakra UI, implementing responsive user interfaces, API
+                                                    integration, product listings, shopping workflows, and admin
+                                                    dashboards.<br>
+                                                    • Contributed to Labour Connect by developing backend REST APIs,
+                                                    authentication, subscription management, employer and worker
+                                                    modules, and database design using Node.js, Express.js, Fastify, and
+                                                    MongoDB.<br>
+                                                    • Collaborated with cross-functional teams using Git and Agile
+                                                    methodologies to deliver production-ready features within deadlines.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- EXPERIENCE 2 -->
                             <div class="first-section">
                                 <div class="container-fluid">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="left-content">
-                                                <h2>Experience</h2>
+
                                                 <p>
                                                     <strong>Company:</strong> All Indian IT Services, Nagpur<br>
                                                     <strong>Role:</strong> MERN Stack Developer<br>
-                                                    <strong>Duration:</strong> June 2025 – Present<br><br>
+                                                    <strong>Duration:</strong> June 2025 – Feb 2026<br><br>
 
                                                     <strong>Role Description:</strong><br>
                                                     Currently working as a MERN Stack Developer on large-scale
@@ -242,27 +299,30 @@
                                         <div class="col-md-6">
                                             <div class="right-image">
                                                 <img src="./img/aiits_all_indian_it_services_logo.jpg"
-                                                    alt="Government Project Experience">
+                                                    alt="Government Project Experience"
+                                                    style="max-width: 200px; width: 100%; height: auto; display: block; margin: 0 auto;">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- EXPERIENCE 2 -->
+                            <!-- EXPERIENCE 3 -->
                             <div class="second-section">
                                 <div class="container-fluid">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="left-image">
-                                                <img src="./img/psklogo-768x768.jpeg" alt="Corporate Experience">
+                                                <img src="./img/psklogo-768x768.jpeg" alt="Corporate Experience"
+                                                    style="max-width: 200px; width: 100%; height: auto; display: block; margin: 0 auto;">
                                             </div>
                                         </div>
 
                                         <div class="col-md-6">
                                             <div class="right-content">
-                                                <h2>PSK Technologies Pvt. Ltd.</h2>
+
                                                 <p>
+                                                    <strong>Company:</strong> PSK Technologies Pvt. Ltd.<br>
                                                     <strong>Role:</strong> MERN Stack Developer<br>
                                                     <strong>Duration:</strong> Jan 2023 – June 2025<br><br>
 
@@ -301,7 +361,6 @@
                                                 </p>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -322,23 +381,26 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="left-content">
-                                                <h2>District Dashbaords</h2>
+                                                <h2><a href="https://github.com/Tanushri-Dhote/Diaspora-Marketplace"
+                                                        target="_blank"
+                                                        style="color: inherit; text-decoration: none;">Diaspora
+                                                        Marketplace</a></h2>
                                                 <p>
-                                                    Developed a <strong>Public District Dashboard</strong> for Yavatmal
-                                                    providing analytics on population, literacy, administration, and
-                                                    development data. Built dashboards for multiple government
-                                                    departments with dynamic filters and integrated
-                                                    <strong>OpenAI-powered data analysis</strong> to deliver instant
-                                                    insights and summaries from complex datasets.
+                                                    A responsive marketplace application built with React.js and Chakra
+                                                    UI.
+                                                    Implemented product listings, shopping workflows, admin dashboards,
+                                                    and API integration for a seamless e-commerce experience.
                                                 </p>
                                                 <div class="main-btn"><a
-                                                        href="https://www.yavatmaldistrictdashboard.in/landing-page">Continue
-                                                        Reading</a></div>
+                                                        href="https://github.com/Tanushri-Dhote/Diaspora-Marketplace"
+                                                        target="_blank">View
+                                                        on GitHub</a></div>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="right-image">
-                                                <img src="./img/yvt-dashbaord.png" alt="second service">
+                                                <img src="./img/Dispora Marketplace.png" alt="Diaspora Marketplace"
+                                                    style="max-width: 100%; height: auto;">
                                             </div>
                                         </div>
                                     </div>
@@ -351,9 +413,37 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="left-image">
-                                                <img src="./img/admin-login.png" alt="second service">
+                                                <img src="./img/Diaspora-Marketplace.png" alt="Industrial Marketplace"
+                                                    style="max-width: 100%; height: auto;">
                                             </div>
                                         </div>
+                                        <div class="col-md-6">
+                                            <div class="right-content">
+                                                <h2><a href="https://github.com/Tanushri-Dhote/industrial-marketplace"
+                                                        target="_blank"
+                                                        style="color: inherit; text-decoration: none;">Industrial
+                                                        Marketplace</a></h2>
+                                                <p>
+                                                    Developed an industrial marketplace solution with product
+                                                    management,
+                                                    user authentication, order workflows, and admin functionality using
+                                                    Node.js, Express.js, MongoDB, Fastify, and React.js.
+                                                </p>
+                                                <div class="main-btn"><a
+                                                        href="https://github.com/Tanushri-Dhote/industrial-marketplace"
+                                                        target="_blank">View
+                                                        on GitHub</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="first-section">
+                                <div class="container-fluid">
+                                    <div class="row">
+
                                         <div class="col-md-6">
                                             <div class="right-content">
                                                 <h2>Admin Panel</h2>
@@ -372,16 +462,27 @@
                                                         Reading</a></div>
                                             </div>
                                         </div>
+                                        <div class="col-md-6">
+                                            <div class="left-image">
+                                                <img src="./img/admin-login.png" alt="second service">
+                                            </div>
+                                        </div>
                                     </div>
                                     <br>
                                 </div>
                             </div>
 
-                            <div class="first-section">
+                           
+                            <div class="second-section">
                                 <div class="container-fluid">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <div class="left-content">
+                                            <div class="left-image">
+                                                <img src="img/nagpurdial.png" alt="second service">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="right-content">
                                                 <h2>Nagpurdial</h2>
                                                 <p>Nagpur Dial it is a
                                                     Website used for Nagpur
@@ -397,26 +498,21 @@
                                                     website & mobile App
                                                     (Android Web
                                                     View).{" "}</p>
-                                                <div class="main-btn"><a href="https://nagpurdial.com/">Continue
-                                                        Reading</a></div>
+                                                <div class="main-btn"><a
+                                                        href="https://github.com/Tanushri-Dhote/industrial-marketplace"
+                                                        target="_blank">View
+                                                        on GitHub</a></div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="right-image">
-                                                <img src="img/nagpurdial.png" alt="first service">
-                                            </div>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
+
                             <div class="second-section">
                                 <div class="container-fluid">
                                     <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="left-image">
-                                                <img src="img/LMS.jpg" alt="second service">
-                                            </div>
-                                        </div>
+
                                         <div class="col-md-6">
                                             <div class="right-content">
                                                 <h2>LMS</h2>
@@ -437,6 +533,11 @@
                                                     engagement.{" "}</p>
                                                 <div class="main-btn"><a href="#">Continue
                                                         Reading</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="left-image">
+                                                <img src="img/LMS.jpg" alt="second service">
                                             </div>
                                         </div>
                                     </div>
@@ -576,6 +677,41 @@
             window.open(whatsappUrl, "_blank");
         }
     </script>
+
+    <script>
+        function openGithubAlert() {
+            Swal.fire({
+                html: `
+        <div style="display:flex;flex-direction:column;align-items:center;">
+          <img 
+            src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+            alt="GitHub Logo"
+            style="width:70px;height:70px;margin-bottom:15px;"
+          />
+          <h3 style="margin:0;font-weight:bold">Open GitHub?</h3>
+          <p style="margin-top:8px;font-size:14px;">
+            This will open my GitHub profile in a new tab.
+          </p>
+        </div>
+      `,
+                showCancelButton: true,
+                confirmButtonText: 'Open GitHub',
+                cancelButtonText: 'Go Back',
+                confirmButtonColor: '#3D7A29',
+                cancelButtonColor: '#B6E2A7',
+                focusConfirm: false,
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.open(
+                        'https://github.com/Tanushri-Dhote?tab=repositories',
+                        '_blank'
+                    );
+                }
+            });
+        }
+    </script>
+
+
 </body>
 
 </html>

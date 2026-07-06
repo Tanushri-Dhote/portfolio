@@ -472,7 +472,7 @@ nav a:hover::before {
 
 .third-content {
 	text-align: left;
-	padding: 30px;
+	padding: 18px 20px;
 }
 
 .third-content .container-fluid {
@@ -480,22 +480,26 @@ nav a:hover::before {
 	padding-left: 7.5px;
 }
 
+.third-content .first-section,
+.third-content .second-section {
+	margin-top: 18px;
+}
+
+.third-content .first-section .left-content,
+.third-content .second-section .right-content {
+	margin-top: 0;
+}
+
 .third-content .first-section .left-content {
 	margin-right: 15px;
-	margin-top: 12px;
 }
 
 .third-content .first-section .right-image {
 	margin-left: 15px;
 }
 
-.third-content .second-section {
-	margin-top: 30px;
-}
-
 .third-content .second-section .right-content {
 	margin-left: 15px;
-	margin-top: 12px;
 }
 
 .third-content .second-section .left-image {
